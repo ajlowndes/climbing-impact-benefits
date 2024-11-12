@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .stat-card {
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .impact-stat {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #1d4ed8;
+        }
+        .warning-stat {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #b91c1c;
+        }
+        .risk-stat {
+            font-size: 1.875rem;
+            font-weight: bold;
+            color: #b45309;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 2rem 0 1rem;
+            text-align: center;
+            color: #1f2937;
+        }
+        .benefit-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .benefit-item {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+            padding-left: 1rem;
+            position: relative;
+        }
+        .benefit-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        .divider {
+            height: 2px;
+            background: #e5e7eb;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body class="p-8 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <!-- Impact Assessment Section -->
+        <h1 class="section-title">Impact of Dyurrite Management Plan on Climbing Guides</h1>
+        
+        <!-- Current State -->
+        <div class="stat-card bg-blue-50">
+            <h3 class="text-lg font-semibold mb-4">Current Guiding Impact (2024)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <div class="impact-stat">414</div>
+                    <div class="text-sm">Guide-Days at Dyurrite</div>
+                </div>
+                <div>
+                    <div class="impact-stat">$181,825</div>
+                    <div class="text-sm">Direct Guide Wages</div>
+                </div>
+                <div>
+                    <div class="impact-stat">$12.3M</div>
+                    <div class="text-sm">Total Economic Benefit</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Areas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="card bg-red-50">
+                <h3 class="text-lg font-semibold mb-4">Restricted Access Impact</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">Limited multi-pitch routes below grade 8</li>
+                    <li class="benefit-item">Reduced top-rope teaching areas</li>
+                    <li class="benefit-item">Loss of key beginner-friendly areas</li>
+                    <li class="benefit-item">Restricted shade/shelter options</li>
+                </ul>
+            </div>
+            <div class="card bg-red-50">
+                <h3 class="text-lg font-semibold mb-4">Educational Impact</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">80 school groups affected annually</li>
+                    <li class="benefit-item">Reduced ability to teach varied skill levels</li>
+                    <li class="benefit-item">Compromised safety due to congestion</li>
+                    <li class="benefit-item">Limited environmental education options</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Economic Risk -->
+        <div class="card bg-yellow-50">
+            <h3 class="text-lg font-semibold mb-4 text-center">Projected Economic Risk</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center">
+                    <div class="risk-stat">30+</div>
+                    <div class="text-sm">Natimuk-based Guides Affected</div>
+                </div>
+                <div class="text-center">
+                    <div class="risk-stat">$332K</div>
+                    <div class="text-sm">Annual School Group Revenue at Risk</div>
+                </div>
+                <div class="text-center">
+                    <div class="risk-stat">6%</div>
+                    <div class="text-sm">of Natimuk Population Employed as Guides</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Benefits Section -->
+        <h1 class="section-title">Benefits of Diverse Guided Climbing Options</h1>
+
+        <!-- Benefits Stats -->
+        <div class="stat-card bg-blue-50">
+            <p class="text-sm text-gray-600 mb-4">Based on survey of 496 active climbers in Victoria (2021 Economic Assessment)</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <div class="impact-stat">72%</div>
+                    <div class="text-sm">of Surveyed Climbers<br/>Rate Physical & Mental Challenge as "Very Important"</div>
+                </div>
+                <div>
+                    <div class="impact-stat">56%</div>
+                    <div class="text-sm">of Surveyed Climbers<br/>Use Climbing to Manage Mental Wellbeing</div>
+                </div>
+                <div>
+                    <div class="impact-stat">70%</div>
+                    <div class="text-sm">of Surveyed Climbers<br/>Rate Time in Nature as "Very Important"</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card">
+                <h3 class="text-lg font-semibold mb-4">Mental Health Benefits</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">Builds resilience through achievable challenges</li>
+                    <li class="benefit-item">Reduces stress and anxiety</li>
+                    <li class="benefit-item">Develops problem-solving skills</li>
+                    <li class="benefit-item">Boosts confidence through accomplishment</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="text-lg font-semibold mb-4">Multi-Pitch Advantages</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">Extended adventure experience</li>
+                    <li class="benefit-item">Deeper trust-building opportunities</li>
+                    <li class="benefit-item">True summit achievement feeling</li>
+                    <li class="benefit-item">Enhanced height exposure management</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="text-lg font-semibold mb-4">Educational Value</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">Customized difficulty for each student</li>
+                    <li class="benefit-item">Safe introduction to adventure</li>
+                    <li class="benefit-item">Physical education benefits</li>
+                    <li class="benefit-item">Environmental awareness</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="text-lg font-semibold mb-4">Safety & Progression</h3>
+                <ul class="benefit-list">
+                    <li class="benefit-item">Controlled challenge introduction</li>
+                    <li class="benefit-item">Expert risk management</li>
+                    <li class="benefit-item">Skill-appropriate route selection</li>
+                    <li class="benefit-item">Progressive difficulty scaling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
